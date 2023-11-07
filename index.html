@@ -1,1 +1,957 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="./logo.png"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="./logo192.png"/><link rel="manifest" href="./manifest.json"/><title>Dongzheng Wu - 吴东铮</title><script defer="defer" src="./static/js/main.06d06456.js"></script><link href="./static/css/main.d47ab3b4.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title translate="title_name">Dongzheng(Jason) Wu</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">    
+	<!-- Typeface -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300&family=Open+Sans:wght@500;700&family=Salsa&family=Shantell+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body id="page-top" class="politics_version">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div id="main-ld">
+			<div id="loader"></div>  
+		</div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+	
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <span id = "logo" translate="logo">
+            Jason Wu
+        </span>
+        <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">
+			<img class="img-fluid" src="images/logo.png" alt="" />
+		</a> -->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" translate="menu">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger active" href="#home" translate="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about" translate="about-me">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services" translate="skills">Skills</a>
+            </li>
+            
+            <!-- <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#testimonials">Testimonials</a>
+            </li> -->
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#blog" translate="experiences">Experiences</a>
+            </li>
+			<li class="nav-item">
+				<a class="nav-link js-scroll-trigger" href="#portfolio" translate="portfolio">Portfolio</a>
+			</li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact" translate="contact-me">Contact Me</a>
+            </li>
+
+			<li class="nav-item">
+				<a class="nav-link js-scroll-trigger" id="translate" href="#" translate="language">中文</a>
+			</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	
+	<section id="home" class="main-banner parallaxie" style="background: url('uploads/bg.jpg')">
+		<div class="heading">
+			<h1 translate="greetings">hello i'm Dongzheng</h1>
+			<p translate="intro">"I am a technology enthusiast who proactively strives for self-improvement, continually surpasses personal limits,<br/> maintains an optimistic outlook on life, and harbors a deep longing for poetry and distant horizons."</p>
+			<h3 class="cd-headline clip is-full-width">
+				<span translate="iama">I AM A </span>
+				<span class="cd-words-wrapper">
+					<b class="is-visible" translate="web-developer">Web Developer</b>
+					<b translate="software-engineer">Software Engineer</b>
+					<b translate="creative-designer">Creative Designer</b>
+					<b translate="mobile-developer">Mobile Developer</b>
+                    <b translate="master-student">Master Student</b>
+				</span>
+			</h3>
+		</div>
+	</section>
+
+	<svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 85 100" preserveAspectRatio="none">
+        <path d="M-5 100 Q 0 20 5 100 Z
+            M0 100 Q 5 0 10 100
+            M5 100 Q 10 30 15 100
+            M10 100 Q 15 10 20 100
+            M15 100 Q 20 30 25 100
+            M20 100 Q 25 -10 30 100
+            M25 100 Q 30 10 35 100
+            M30 100 Q 35 30 40 100
+            M35 100 Q 40 10 45 100
+            M40 100 Q 45 50 50 100
+            M45 100 Q 50 20 55 100
+            M50 100 Q 55 40 60 100
+            M55 100 Q 60 60 65 100
+            M60 100 Q 65 50 70 100
+            M65 100 Q 70 20 75 100
+            M70 100 Q 75 45 80 100
+            M75 100 Q 80 30 85 100
+            M80 100 Q 85 20 90 100
+            M85 100 Q 90 50 95 100
+            M90 100 Q 95 25 100 100
+            M95 100 Q 100 15 105 100 Z">
+        </path>
+    </svg>
+
+    <div id="about" class="section wb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box">                        
+                        <h2 translate="about-me">About Me</h2>
+                        <p translate="detail-intro1"> I am an international student from China and completed my Bachelor of Software Engineering Honors Degree at Monash University in 2023. I am currently pursuing a Master's degree in IT. As a graduate of the software engineering program, my professional skills encompass, but are not limited to, web development, mobile application development, user interface design, data visualization, and all the knowledge and skills expected of a software engineer.</p>
+						<p translate="detail-intro2"> If you are interested in my abilities or my experiences, please feel free to check out my resume below.</p>
+
+                        <a href="./Dongzheng Wu - CV.pdf" download="Dongzheng Wu - CV.pdf" class="sim-btn btn-hover-new" data-text="Download CV" translate="cv"><span>Download CV</span></a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+                <div class="col-md-6">
+                    <div class="right-box-pro wow fadeIn">
+                        <img src="uploads/profile.png" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+    <div id="services" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3 translate="skills">Skills</h3>
+                <p translate="skills-intro">My primary professional skills include, but are not limited to, the following:</p>
+            </div><!-- end title -->
+
+            <div class="row">
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="bi bi-window"></i>
+						</div>
+						<h2 translate="web-development">Web Development</h2>
+						<p translate="web-development-intro">I have experience in web frontend development using React.js and Vue.js, with a strong foundation in web development, including proficiency in HTML/CSS, JavaScript, and various frameworks like jQuery and Bootstrap. I have also utilized technologies for handling requests and interacting with the backend, such as Axios, Fetch, and Node.js.<br/></p>
+					</div>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="bi bi-phone"></i>
+						</div>
+						<h2 translate="mobile-development">Mobile Development</h2>
+						<p translate="mobile-development-intro">I possess hands-on experience in developing Android and iOS applications, employing Kotlin and Swift for their respective development. Furthermore, I am experienced in multi-platform development, having utilized React Native to build native mobile applications compatible with both Android and iOS platforms.</p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="bi bi-gear"></i>
+						</div>
+						<h2 translate="physical-artifacts">Physical Artifacts</h2>
+						<p translate="physical-artifacts-intro">I have experience using Arduino and a range of electronic components, such as sensors, Bluetooth modules, GPS modules, etc., to create technologically enhanced physical products. I have experience in designing and connecting circuits, soldering, and coding microcontrollers.<br/><br/></p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="bi bi-book"></i>
+						</div>
+						<h2 translate="knowledge">Knowledge</h2>
+						<p translate="knowledge-intro">I possess all the fundamental knowledge that a software engineer should have, including version control, quality assurance (testing and CI/CD), design principles and software architecture, algorithms, relational/non-relational databases, and process management (Agile).<br/><br/></p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="bi bi-person-up"></i>
+						</div>
+						<h2 translate="professional-ability">Professional Ability</h2>
+						<p translate="professional-ability-intro">I have acquired the ability to quickly and independently master new skills, research and solve problems, laying the foundation for my contributions to projects. In a team setting, I have learned how to collaborate and communicate more effectively, ensuring that I can excel both as an individual and as part of a team.</p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="bi bi-pencil"></i>
+						</div>
+						<h2 translate="ui/ux-design">UI/UX Design</h2>
+						<p translate="ui/ux-design-intro">I have extensive experience in UI/UX design, specializing in high-fidelity interface prototyping using Figma for both desktop and mobile applications. I have intentionally studied the principles of Usability and Accessibility, aiming to enhance the user experience while ensuring functionality.</p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="bi bi-search"></i>
+						</div>
+						<h2 translate="research-ability">Research Ability</h2>
+						<p translate="research-ability-intro">I have studied research methods and been involved in research projects. I am well-versed in the research process and theory, possessing skills commonly used in research such as data collection (designing interviews and questionnaires), experimental design, data analysis, data visualization, and more.</p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="bi bi-code-slash"></i>
+						</div>
+						<h2 translate="other-programming">Other Programming</h2>
+						<p translate="other-programming-intro">I have studied and used several programming languages, but have applied them less frequently in development. These include C, C#, Java, Python, and more. Among them, Python is more commonly used for scripting, data processing, and web scraping, among other tasks.<br/><br/></p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="bi bi-database"></i>
+						</div>
+						<h2 translate="database">Database</h2>
+						<p translate="database-intro">I have studied theoretical knowledge and code related to both relational and non-relational databases (SQL & MongoDB). I commonly use RESTful APIs and Firebase for development. Due to project limitations, I have limited experience with backend and database development.<br/><br/></p>
+					</div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+	<div id="blog" class="section wb">
+		<div class="container">
+			<div class="section-title text-left">
+                <h3 translate="experiences">Experiences</h3>
+                <p translate="experiences-intro">I have extensive technical and non-technical experience.</p>
+            </div><!-- end title -->
+			
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="post-box">
+						<div class="post-thumb">
+							<img src="uploads/p1.png" class="img-fluid" alt="post-img" />
+							<div class="date">
+								<span translate="oct">Oct</span>
+								<span>2022</span>
+							</div>
+						</div>
+						<div class="post-info">
+							<h4>Teach me Talkback</h4>
+							<ul>
+                                <li translate="university-group-project">University Group Project</li>
+                                <!-- <li>Apr 21, 2018</li> -->
+								<hr/>
+                                <li><a href="https://github.com/TalkbackTutorial"><b translate="click-here-to-access">Click here to access</b></a></li>
+								<hr/>
+                            </ul>
+							<p translate="p1-intro">Developed an android mobile application that is a comprehensive and intuitive tutorial for basic phone
+								gestures and tasks based on google talkback.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="post-box">
+						<div class="post-thumb">
+							<img src="uploads/p2.png" class="img-fluid" alt="post-img" />
+							<div class="date">
+								<span translate="oct">Oct</span>
+								<span>2022</span>
+							</div>
+						</div>
+						<div class="post-info">
+							<h4>Physical Artefacts</h4>
+							<ul>
+                                <li translate="university-individual-project">University Individual Project</li>
+                                <!-- <li>Apr 21, 2018</li> -->
+								<hr/>
+                                <li><a href="https://docs.google.com/document/d/1ympPmmOpkzX33aBaNHvX-5bbLsfEycH5_Chd6_wvuJE/edit?usp=sharing"><b translate="click-here-to-access">Click here to access</b></a></li>
+								<hr/>
+							</ul>
+							<p translate="p2-intro">Accomplished an individual project that entailed crafting five distinct artefacts, with each one
+								employing varied techniques to realise specific features.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="post-box">
+						<div class="post-thumb">
+							<img src="uploads/blog-03.jpg" class="img-fluid" alt="post-img" />
+							<div class="date">
+								<span translate="oct">Oct</span>
+								<span>2022</span>
+							</div>
+						</div>
+						<div class="post-info">
+							<h4>C-Money</h4>
+							<ul>
+                                <li translate="university-individual-project">University Individual Project</li>
+                                <!-- <li>Apr 21, 2018</li> -->
+								<hr/>
+                                <li><a href="https://github.com/JasonWu7/C-Money"><b translate="click-here-to-access">Click here to access</b></a></li>
+								<hr/>
+                            </ul>
+							<p translate="p3-intro">Designed and implemented the iOS application focused on helping users track income
+								and expenses in an intuitive and convenient manner while setting saving goals.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+            <div class="row">
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="post-box">
+						<div class="post-thumb">
+							<img src="uploads/p4.png" class="img-fluid" alt="post-img" />
+							<div class="date">
+								<span translate="oct">Oct</span>
+								<span>2023</span>
+							</div>
+						</div>
+						<div class="post-info">
+							<h4>Intake</h4>
+							<ul>
+                                <li translate="university-group-project">University Group Project</li>
+                                <!-- <li>Apr 21, 2018</li>
+                                <li><a href="#"><b> Comments</b></a></li> -->
+								<hr/>
+                                <li><a href="https://github.com/FIT4002-TEAM9"><b translate="click-here-to-access">Click here to access</b></a></li>
+								<hr/>
+                            </ul>
+							<p translate="p4-intro">Developed a triage software designed for healthcare professionals, with the aim of modernising and
+								automating the traditional triage process to reduce human errors. The project is now listed in the <a href="https://www.monash.edu/it/humanise-lab/research/development-of-mental-health-triage-app-for-clinician">HumaniSE Lab research website</a>.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="post-box">
+						<div class="post-thumb">
+							<img src="uploads/blog-02.jpg" class="img-fluid" alt="post-img" />
+							<div class="date">
+								<span translate="oct">Oct</span>
+								<span>2023</span>
+							</div>
+						</div>
+						<div class="post-info">
+							<h4>ChatGPT Test Converter</h4>
+							<ul>
+                                <li translate="university-group-project">University Group Project</li>
+                                <hr/>
+                                <li><a href="https://github.com/tngu0041/ChatGPTTestConversionTool"><b translate="click-here-to-access">Click here to access</b></a></li>
+								<hr/>
+                            </ul>
+							<p translate="p5-intro">This research project was focused on exploring the feasibility of using ChatGPT to convert UI test
+								cases across different platforms. The ultimate goal was to develop a command-line tool to accomplish
+								this task efficiently.
+								</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+	
+	<div id="portfolio" class="section lb">
+		<div class="container">
+			<div class="section-title text-left">
+                <h3 translate="portfolio">Portfolio</h3>
+                <p translate="portfolio-intro">Here are my various works.</p>
+            </div><!-- end title -->
+			
+			<div class="gallery-menu row">
+				<div class="col-md-12">
+					<div class="button-group filter-button-group text-left">
+						<button class="active" data-filter="*" translate="all">All</button>
+						<button data-filter=".gal_a" translate="web-development">Web Development</button>
+						<button data-filter=".gal_b" translate="mobile-development">Mobile Development</button>
+						<button data-filter=".gal_c" translate="other">Other</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="gallery-list row">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a">
+					<div class="gallery-single fix">
+						<img src="uploads/web1.png" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/web1.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 gallery-grid gal_c">
+					<div class="gallery-single fix">
+						<img src="uploads/other1.png" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/other1.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a">
+					<div class="gallery-single fix">
+						<img src="uploads/web3.png" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/web3.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a">
+					<div class="gallery-single fix">
+						<img src="uploads/web4.png" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/web4.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a">
+					<div class="gallery-single fix">
+						<img src="uploads/web2.png" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/web2.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_c">
+					<div class="gallery-single fix">
+						<img src="uploads/other2.png" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/other2.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_c">
+					<div class="gallery-single fix">
+						<img src="uploads/other3.png" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/other3.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	
+	 <div id="testimonials" class="section wb" style="display: none;">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Testimonials</h3>
+                <p>We thanks for all our awesome testimonials! There are hundreds of our happy customers! </p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
+                                <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="uploads/testi_01.png" alt="" class="img-fluid alignleft">
+                                <h4>James Fernando <small>- Manager of Racer</small></h4>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
+                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="uploads/testi_02.png" alt="" class="img-fluid alignleft">
+                                <h4>Jacques Philips <small>- Designer</small></h4>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
+                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="uploads/testi_03.png" alt="" class="img-fluid alignleft">
+                                <h4>Venanda Mercy <small>- Newyork City</small></h4>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
+                                <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="uploads/testi_01.png" alt="" class="img-fluid alignleft">
+                                <h4>James Fernando <small>- Manager of Racer</small></h4>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
+                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="uploads/testi_02.png" alt="" class="img-fluid alignleft">
+                                <h4>Jacques Philips <small>- Designer</small></h4>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
+                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="uploads/testi_03.png" alt="" class="img-fluid alignleft">
+                                <h4>Venanda Mercy <small>- Newyork City</small></h4>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div><!-- end testimonial -->
+                    </div><!-- end carousel -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div id="contact" class="section db">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3 translate="contact">Contact</h3>
+                <p translate="contact-intro">Please use the form below to get in touch with me.</p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contact_form">
+                        <div id="message"></div>
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate" action="https://api.staticforms.xyz/submit" method="post">
+							<div class="row">
+								<input type="hidden" name="accessKey" value="bfb0c965-f1cb-4cfd-a498-6a0e7c58fd0f">
+								<input type="hidden" name="subject" value="From profile viewer">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control input" id="name" type="text" name="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name." translate="your-name" validation-translate="your-name">
+										<p class="help-block text-danger" id="name-help"></p>
+									</div>
+									<div class="form-group">
+										<input class="form-control input" id="email" type="email" name="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email address." translate="your-email" validation-translate="your-email">
+										<p class="help-block text-danger" id="email-help"></p>
+									</div>
+									<div class="form-group">
+										<input class="form-control input" id="phone" type="tel" name="phone" placeholder="Your Phone" required="required" data-validation-required-message="Please enter your phone number." translate="your-phone" validation-translate="your-phone">
+										<p class="help-block text-danger" id="phone-help"></p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<textarea class="form-control textarea" id="message" name="message" placeholder="Your Message" required="required" data-validation-required-message="Please enter a message." translate="your-message" validation-translate="your-message"></textarea>
+										<p class="help-block text-danger" id="message-help"></p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-lg-12 text-center">
+									<div id="success"></div>
+									<button id="sendMessageButton" class="sim-btn btn-hover-new" data-text="Send Message" type="submit" translate="send-message">Send Message</button>
+								</div>
+							</div>
+						</form>
+                    </div>	
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-links" style="text-transform: initial">
+                        <a href="www.linkedin.com/in/dongzheng-wu">LinkedIn</a>
+                        <a href="https://github.com/JasonWu7">Github</a>
+                        
+                    </p>
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2023 <a href="#">Dongzheng Wu</a> Redesign By <a href="#">Dongzheng Wu</a> Original by 
+					<a href="https://html.design/">html design</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+	<!-- Camera Slider -->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script> 
+	<script src="js/parallaxie.js"></script>
+	<script src="js/headline.js"></script>
+	<!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.vide.js"></script>
+
+	<script>
+		const translations = {
+			'language': {		// Intended to be reverse order
+				'zh': 'English',
+				'en': '中文'
+			},
+			'title_name': {
+				'en': 'Dongzheng(Jason) Wu',
+				'zh': '吴东铮'
+			},
+			'logo': {
+				'en': 'Jason Wu',
+				'zh': '吴东铮'
+			},
+			'menu': {
+				'en': 'Menu',
+				'zh': '菜单'
+			},
+			'home': {
+				'en': 'Home',
+				'zh': '主页'
+			},
+			'about-me': {
+				'en': 'About Me',
+				'zh': '关于我'
+			},
+			'skills': {
+				'en': 'Skills',
+				'zh': '技能'
+			},
+			'experiences': {
+				'en': 'Experiences',
+				'zh': '经验'
+			},
+			'portfolio': {
+				'en': 'Portfolio',
+				'zh': '展示'
+			},
+			'contact-me': {
+				'en': 'Contact Me',
+				'zh': '与我联系'
+			},
+			'experiences': {
+				'en': 'Experiences',
+				'zh': '经验'
+			},
+			'experiences': {
+				'en': 'Experiences',
+				'zh': '经验'
+			},
+			'greetings': {
+				'en': 'hello i\'m Dongzheng',
+				'zh': '你好 我叫东铮'
+			},
+			'intro': {
+				'en': '"I am a technology enthusiast who proactively strives for self-improvement, continually surpasses personal limits,<br> maintains an optimistic outlook on life, and harbors a deep longing for poetry and distant horizons."',
+				'zh': '"我是一名积极进取，不断挑战自己极限的科技爱好者，同时怀着对美好的憧憬，拥有乐观的生活态度。"'
+			},
+			'iama': {
+				'en': 'I AM A',
+				'zh': '我是一名'
+			},
+			'web-developer': {
+				'en': 'web developer',
+				'zh': '网页开发者'
+			},
+			'creative-designer': {
+				'en': 'creative designer',
+				'zh': '创意设计师'
+			},
+			'software-engineer': {
+				'en': 'software engineer',
+				'zh': '软件工程师'
+			},
+			'mobile-developer': {
+				'en': 'mobile developer',
+				'zh': '移动开发者'
+			},
+			'master-student': {
+				'en': 'master student',
+				'zh': '研究生'
+			},
+			'detail-intro1': {
+				'en': 'I am an international student from China and completed my Bachelor of Software Engineering Honors Degree at Monash University in 2023. I am currently pursuing a Master\'s degree in IT. As a graduate of the software engineering program, my professional skills encompass, but are not limited to, web development, mobile application development, user interface design, data visualization, and all the knowledge and skills expected of a software engineer.',
+				'zh': '我是一名留学生，于2023年毕业于墨尔本的莫纳什大学获得软件工程荣誉学士学位。目前正在本校攻读IT硕士学位。作为软件工程专业的毕业生，我的专业技能包括但不仅限于网页开发，移动应用程序开发，用户界面设计，数据可视化以及软件工程师所需具备的所有知识和技能。'
+			},
+			'detail-intro2': {
+				'en': 'If you are interested in my abilities or my experiences, please feel free to check out my resume below.',
+				'zh': '如果你对我的能力或者经验感兴趣，欢迎从下方获取我的简历。'
+			},
+			'cv': {
+				'en': 'Download CV',
+				'zh': '获取简历'
+			},
+			'skills-intro': {
+				'en': 'My primary professional skills include, but are not limited to, the following:',
+				'zh': '我的主要技能包括但不仅限于以下:'
+			},
+			'web-development': {
+				'en': 'Web Development',
+				'zh': '网页开发'
+			},
+			'web-development-intro': {
+				'en': 'I have experience in web frontend development using React.js and Vue.js, with a strong foundation in web development, including proficiency in HTML/CSS, JavaScript, and various frameworks like jQuery and Bootstrap. I have also utilized technologies for handling requests and interacting with the backend, such as Axios, Fetch, and Node.js.',
+				'zh': '我有使用 React.js 和 Vue.js 进行 Web 前端开发的经验，具有坚实的 Web 开发基础，包括精通 HTML/CSS、JavaScript 以及熟练使用 jQuery 和 Bootstrap 等各种框架。 使用过技术例如 Axios、Fetch 和 Node.js 处理请求以及和后端交互等。<br/><br/><br/><br/><br/>'
+			},
+			'mobile-development': {
+				'en': 'Mobile Development',
+				'zh': '移动应用开发'
+			},
+			'mobile-development-intro': {
+				'en': 'I possess hands-on experience in developing Android and iOS applications, employing Kotlin and Swift for their respective development. Furthermore, I am experienced in multi-platform development, having utilized React Native to build native mobile applications compatible with both Android and iOS platforms.',
+				'zh': '我拥有开发Android 和 iOS 应用的实践经验， 分别使用了Kotlin 和 Swift 进行开发。 熟悉其相关生态以及常用的库。 同时，我有着多平台开发的经验， 曾使用过React Native搭建了可以在Android 和 iOS (也包括web) 上运行的原生应用。<br/><br/><br/><br/><br/>'
+			},
+			'physical-artifacts': {
+				'en': 'Physical Artifacts',
+				'zh': '物理手工制品'
+			},
+			'physical-artifacts-intro': {
+				'en': 'I have experience using Arduino and a range of electronic components, such as sensors, Bluetooth modules, GPS modules, etc., to create technologically enhanced physical products. I have experience in designing and connecting circuits, soldering, and coding microcontrollers.',
+				'zh': '我试用过许多不同的电子元件如传感器， 蓝牙模块， GPS模块等 利用arduino 创造一系列带有技术性的物理产品。从中获取了许多经验例如设计和连接电路，焊接， 编写微控制器代码等。<br/><br/><br/><br/><br/><br/><br/>'
+			},
+			'knowledge': {
+				'en': 'Knowledge',
+				'zh': '知识'
+			},
+			'knowledge-intro': {
+				'en': 'I possess all the fundamental knowledge that a software engineer should have, including version control, quality assurance (testing and CI/CD), design principles and software architecture, algorithms, relational/non-relational databases, and process management (Agile).<br/><br/>',
+				'zh': '我拥有软件工程师应具备的所有基础知识，包括版本控制、质量保证（测试和 CI/CD）、设计原理和软件架构、算法、关系/非关系数据库和流程管理（敏捷开发）。<br/><br/><br/><br/><br/><br/>'
+			},
+			'professional-ability': {
+				'en': 'Professional Ability',
+				'zh': '专业能力'
+			},
+			'professional-ability-intro': {
+				'en': 'I have acquired the ability to quickly and independently master new skills, research and solve problems, laying the foundation for my contributions to projects. In a team setting, I have learned how to collaborate and communicate more effectively, ensuring that I can excel both as an individual and as part of a team.',
+				'zh': '我拥有快速独立掌握新技能、研究和解决问题的能力，这为我完成项目奠定了基础。 在团队环境中，我学会了如何更有效地协作和沟通并具备了一定的领导力，确保我作为个人和团队的一部分都能表现出色。<br/><br/><br/><br/><br/>'
+			},
+			'ui/ux-design': {
+				'en': 'UI/UX Design',
+				'zh': '用户界面/体验 设计'
+			},
+			'ui/ux-design-intro': {
+				'en': 'I have extensive experience in UI/UX design, specializing in high-fidelity interface prototyping using Figma for both desktop and mobile applications. I have intentionally studied the principles of Usability and Accessibility, aiming to enhance the user experience while ensuring functionality.',
+				'zh': '我在 用户界面/体验 设计方面拥有丰富的经验，例如使用 Figma 为桌面和移动应用程序设计高保真界面原型。 我有意识地学习了可用性和可访问性的设计原则，旨在在保证功能的同时增强用户体验。<br/><br/><br/><br/><br/><br/>'
+			},
+			'research-ability': {
+				'en': 'Research Ability',
+				'zh': '研究能力'
+			},
+			'research-ability-intro': {
+				'en': 'I have studied research methods and been involved in research projects. I am well-versed in the research process and theory, possessing skills commonly used in research such as data collection (designing interviews and questionnaires), experimental design, data analysis, data visualization, and more.',
+				'zh': '我学习了研究方法并参与过研究项目。 熟知研究过程和理论，具备常用的技能，如数据收集（设计访谈和问卷）、实验设计、数据分析、数据可视化等。<br/><br/><br/><br/><br/><br/>'
+			},
+			'other-programming': {
+				'en': 'Other Programming',
+				'zh': '其它编程'
+			},
+			'other-programming-intro': {
+				'en': 'I have studied and used several programming languages, but have applied them less frequently in development. These include C, C#, Java, Python, and more. Among them, Python is more commonly used for scripting, data processing, and web scraping, among other tasks.<br/><br/>',
+				'zh': '我学习并使用过多种编程语言，了解其特性，但在开发中应用较少。 例如 C、C#、Java、Python 等。 其中Python较常用于脚本编写、数据处理和网页抓取等任务。<br/><br/><br/><br/><br/><br/>'
+			},
+			'database': {
+				'en': 'Database',
+				'zh': '数据库'
+			},
+			'database-intro': {
+				'en': 'I have studied theoretical knowledge and code related to both relational and non-relational databases (SQL & MongoDB). I commonly use RESTful APIs and Firebase for development. Due to project limitations, I have limited experience with backend and database development.<br/><br/>',
+				'zh': '我学习了与关系型和非关系型数据库（SQL & MongoDB）相关的理论知识和代码。 我通常使用 RESTful API 和 Firebase 进行开发。 由于项目限制，我对后端和数据库开发的经验有限。<br/><br/><br/><br/><br/><br/>'
+			},
+			'experiences-intro': {
+				'en': 'I have extensive technical and non-technical experience.',
+				'zh': '我拥有丰富的技术和非技术经验。'
+			},
+			'oct': {
+				'en': 'Oct',
+				'zh': '十月'
+			},
+			'university-group-project': {
+				'en': 'University Group Project',
+				'zh': '大学团队项目'
+			},
+			'university-individual-project': {
+				'en': 'University Individual Project',
+				'zh': '大学个人项目'
+			},
+			'click-here-to-access': {
+				'en': 'Click here to access',
+				'zh': '点击这里访问'
+			},
+			'p1-intro': {
+				'en': 'Developed an android mobile application that is a comprehensive and intuitive tutorial for basic phone gestures and tasks based on google talkback.',
+				'zh': '开发了一款Android移动应用程序，它提供了一个直观的教程以帮助用户使用基于Google TalkBack的手势来轻松完成各种移动设备任务。<br/><br/><br/>'
+			},
+			'p2-intro': {
+				'en': 'Accomplished an individual project that entailed crafting five distinct artefacts, with each one employing varied techniques to realise specific features.',
+				'zh': '完成了制作五个手工制品的个人项目，每一个产品都含有独特的技术性元素。<br/><br/><br/><br/>'
+			},
+			'p3-intro': {
+				'en': 'Designed and implemented the iOS application focused on helping users track income and expenses in an intuitive and convenient manner while setting saving goals.',
+				'zh': '设计并实现了一个以更直观便捷的方式帮助用户记录收支的iOS应用程序，同时还具备记录和管理存款目标功能。<br/><br/><br/>'
+			},
+			'p4-intro': {
+				'en': 'Developed a triage software designed for healthcare professionals, with the aim of modernising and automating the traditional triage process to reduce human errors. The project is now listed in the <a href="https://www.monash.edu/it/humanise-lab/research/development-of-mental-health-triage-app-for-clinician"> HumaniSE Lab research website</a>. ',
+				'zh': '开发了专为从事医疗行业的专业人员设计的分诊软件，旨在实现传统分诊流程的现代化和自动化，以减少人为错误。 该项目现已列在 <a href="https://www.monash.edu/it/humanise-lab/research/development-of-mental-health-triage-app-for-clinician"> HumaniSE Lab 研究网站上 </a>。<br/><br/><br/><br/>'
+			}
+			,
+			'p5-intro': {
+				'en': 'This research project was focused on exploring the feasibility of using ChatGPT to convert UI test cases across different platforms. The ultimate goal was to develop a command-line tool to accomplish this task efficiently.',
+				'zh': '该研究项目的重点是探索使用 ChatGPT 跨不同平台转换 UI 测试用例的可行性。 最终目标是开发一个命令行工具来高效地完成这项任务。<br/><br/><br/><br/><br/>'
+			},
+			'portfolio-intro': {
+				'en': 'Here are my various works.',
+				'zh': '以下是我的各种作品。'
+			},
+			'all': {
+				'en': 'All',
+				'zh': '所有'
+			},
+			'other': {
+				'en': 'Other',
+				'zh': '其它'
+			},
+			'contact': {
+				'en': 'Contact',
+				'zh': '联系方式'
+			},
+			'contact-intro': {
+				'en': 'Please use the form below to get in touch with me.',
+				'zh': '请通过下方表格与我取得联系'
+			},
+			'send-message': {
+				'en': 'Send Message',
+				'zh': '发送消息'
+			},
+			'your-name': {
+				'en': 'Your Name',
+				'zh': '你的姓名'
+			},
+			'your-email': {
+				'en': 'Your Email',
+				'zh': '你的邮箱'
+			},
+			'your-phone': {
+				'en': 'Your Phone',
+				'zh': '你的号码'
+			},
+			'your-message': {
+				'en': 'Your Message',
+				'zh': '你的消息'
+			}
+
+		};
+
+		const validationTranslation = {
+			'your-name': {
+				'en': 'Please enter your name.',
+				'zh': '请输入你的姓名。'
+			},
+			'your-email': {
+				'en': 'Please enter your email address.',
+				'zh': '请输入你的邮箱。'
+			},
+			'your-phone': {
+				'en': 'Please enter your phone number.',
+				'zh': '请输入你的电话号码。'
+			},
+			'your-message': {
+				'en': 'Please enter a message.',
+				'zh': '请输入需要发送的信息。'
+			}
+		};
+		document.getElementById('translate').addEventListener('click', myFunction);
+
+		function myFunction() {
+			event.preventDefault();
+			const elements = document.querySelectorAll('[translate]');
+			var type = "";
+			if (document.getElementById('translate').textContent == "中文"){
+				type = "zh";
+			}
+			else {
+				type = "en";
+			}
+			elements.forEach((element) => {
+				const key = element.getAttribute('translate');
+
+				if (element.tagName != "INPUT" && element.tagName != "TEXTAREA") {
+					element.innerHTML = translations[key][type] || key;
+				}
+				else {
+					element.setAttribute('placeholder', translations[key][type] || key);
+				}
+				element.setAttribute('data-text', translations[key][type] || key);
+			});
+
+			// For validation message translation
+			const validationElements = document.querySelectorAll('[validation-translate]');
+			console.log(validationElements)
+			validationElements.forEach((element) => {
+				const key = element.getAttribute('validation-translate');
+				console.log(key)
+				element.setAttribute('data-validation-required-message', validationTranslation[key][type] || key);
+			});
+		}
+	</script>
+
+</body>
+</html>

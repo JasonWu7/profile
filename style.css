@@ -2477,3 +2477,7 @@ select.mobile-device {
     font-family: 'Shantell Sans', cursive;
     font-size: 40px;
 }
+
+.grades{
+    font-weight: bold;
+}

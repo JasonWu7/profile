@@ -2481,3 +2481,7 @@ select.mobile-device {
 .grades{
     font-weight: bold;
 }
+
+.course-heading{
+    color:#000;
+}
